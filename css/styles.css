@@ -761,6 +761,7 @@ p {
 }
 
 .contact-form-checkbox-link {
+    margin-left: 2px;
     color: var(--accent-color);
 }
 
