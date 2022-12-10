@@ -44,7 +44,7 @@ p {
     list-style: none;
 }
 
-/* Header */
+/* ============================================Header============================================ */
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -74,7 +74,7 @@ p {
     color: var(--accent-color);
 }
 
-/* Site nav */
+/* ============================================Site nav============================================ */
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -162,7 +162,7 @@ p {
 }
 
 /* Стилі для Студія */
-/* Main */
+/* ============================================Main============================================ */
 .hero {
     padding: 200px 0px;
 
@@ -192,13 +192,13 @@ p {
     text-transform: uppercase;
 }
 
-/* Button */
+/* ============================================Button============================================ */
 .modal-button {
     display: inline-block;
     border: 0;
     border-radius: 4px;
     padding: 10px 32px;
-    
+
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
@@ -238,7 +238,7 @@ p {
     text-align: center;
 }
 
-/* Advantages */
+/* ============================================Advantages============================================ */
 .advantages-list {
     display: flex;
     gap: 30px;
@@ -278,7 +278,7 @@ p {
     line-height: 1.71;
 }
 
-/* Activity */
+/* ============================================Activity============================================ */
 .activity-list {
     display: flex;
     gap: 30px;
@@ -312,7 +312,7 @@ p {
     text-transform: uppercase;
     }
 
-/* Team */
+/* ============================================Team============================================ */
 .team {
     background-color: var(--third-background-color);
 }
@@ -431,7 +431,7 @@ p {
     fill: var(--accent-color);
 }
 
-/* Footer */
+/* ============================================Footer============================================ */
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -442,6 +442,16 @@ p {
 .page-footer .container {
     display: flex;
     align-items: baseline;
+}
+
+.logo-address-subscribe {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-address {
+    display: flex;
+    flex-direction: column;
 }
 
 .page-footer .logo {
@@ -482,10 +492,10 @@ p {
 .subscribe {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
+    margin-left: 70px;
 }
 
-.subscribe .title {
+.subscribe-subtitle {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -526,7 +536,92 @@ p {
     background-color: var(--accent-color);
 }
 
-/* BACKDROP */
+.subscribe-newsletter {
+    display: flex;
+    margin-left: auto;
+}
+
+.subscribe-newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-newsletter-label {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe-newsletter-input {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    color: var(--primary-white-color);
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.subscribe-newsletter-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.subscribe-newsletter-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-newsletter-button-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.subscribe-newsletter-button {
+    display: flex;
+    align-items: center;
+
+    margin-left: 12px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+.subscribe-newsletter-icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
+
+/* ============================================BACKDROP============================================ */
 .backdrop {
     position: fixed;
     top: 0;
@@ -548,8 +643,9 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     background-color: #FFFFFF;
@@ -568,7 +664,149 @@ p {
     border-radius: 50%;
     background-color: transparent;
     padding: 0;
-    /* cursor: pointer; */
+    cursor: pointer;
+}
+
+.contact-form-subtitle {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.contact-form-label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.contact-form-input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    padding-right: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.contact-form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--transition-dur-and-func);
+}
+
+.contact-form-input:focus + .contact-form-icon {
+    fill: var(--accent-color);
+}
+
+.contact-form-message {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--transition-dur-and-func);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+.contact-form-message:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form-message::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form-checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-checkbox-desc {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contact-form-checkbox-link {
+    color: var(--accent-color);
+}
+
+.contact-form-checkbox-desc::before {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+    content: "";
+    cursor: pointer;
+
+    transition: border var(--transition-dur-and-func), background-image var(--transition-dur-and-func);
+}
+
+.contact-form-checkbox:checked + .contact-form-checkbox-desc::before {
+    border: 0px;
+    background-image: url(../images/check.svg);
+}
+
+.contact-form-submit {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--primary-white-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    transition: background-color var(--transition-dur-and-func);
+}
+
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+    background-color: #188CE8;
 }
 
 /* PORTFOLIO */
@@ -635,12 +873,14 @@ p {
 .portfolio-list .item {
     width: 370px;
     margin: 15px;
-
-    transition: box-shadow var(--transition-dur-and-func);
 }
 
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+.portfolio-list .link {
+    display: block;
+}
+
+.portfolio-list .link:hover,
+.portfolio-list .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
