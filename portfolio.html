@@ -207,8 +207,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
-        <div class="container">
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="logo-address-subscribe">
             <div class="logo-address">
                 <a class="logo link" href=""><span class="accent">Web</span>Studio</a>
     
@@ -222,32 +224,32 @@
             </div>
     
             <div class="subscribe">
-                <h2 class="title">приєднуйтесь</h2>
+                <p class="subscribe-subtitle">приєднуйтесь</p>
                 <ul class="social-list-footer list">
                     <li class="social-list-item-footer">
                         <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon" width="20px" height="20px">
+                            <svg class="social-list-icon-footer" width="20px" height="20px">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-list-item-footer">
                         <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon" width="20px" height="20px">
+                            <svg class="social-list-icon-footer" width="20px" height="20px">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-list-item-footer">
                         <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon" width="20px" height="20px">
+                            <svg class="social-list-icon-footer" width="20px" height="20px">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-list-item-footer">
                         <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon" width="20px" height="20px">
+                            <svg class="social-list-icon-footer" width="20px" height="20px">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -255,7 +257,23 @@
                 </ul>          
             </div>
         </div>
-    </footer>
+
+        <div class="subscribe-newsletter">
+            <div class="subscribe-newsletter-wrapper">
+                <label for="subscribe-newsletter" class="subscribe-newsletter-label">Підпишіться на розсилку</label>
+                <input id=subscribe-newsletter type="email" class="subscribe-newsletter-input" name="subscribe-newsletter" placeholder="E-mail">
+            </div>
+
+            <div class="subscribe-newsletter-button-wrapper">
+                <button class="subscribe-newsletter-button">Підписатися
+                    <svg class="subscribe-newsletter-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
     
 </body>
 </html>
